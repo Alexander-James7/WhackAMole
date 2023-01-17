@@ -152,7 +152,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         . . e e e e e e e e e e e e e e 
         e e e e e e e e e e e e e e e e 
         `, SpriteKind.Player)
-    Mole.setPosition(22, 60)
+    Mole.setPosition(100, 60)
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(bBlock)) {
@@ -776,7 +776,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . e e e e e e e e e e e e e e 
         e e e e e e e e e e e e e e e e 
         `, SpriteKind.Player)
-    Mole.setPosition(57, 60)
+    Mole.setPosition(22, 60)
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(downBlock)) {
