@@ -1,3 +1,7 @@
+// Created on: 1/17/2023
+// Created By: Alex James
+// 
+// This block controls and dictates what happens at the Up/Blue sprite. If the player presses the up button, and the mole is on that hole, they player succeeds, the mole sprite changes to the damaged one. and the player gains 1 score. If the mole mole is on a different block when the player presses the button however, the hiding animation plays on the mole and the player loses 1 score. Finally, even if the player hits or misses the mole, at the end it will move to it's next location on the map.
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(upBlock)) {
         Mole.setImage(img`
@@ -154,6 +158,10 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
     Mole.setPosition(100, 60)
 })
+// Created on: 1/17/2023
+// Created By: Alex James
+// 
+// This block controls and dictates what happens at the "B" sprite. If the player presses the B button, and the mole is on that hole, they player succeeds, the mole sprite changes to the damaged one. and the player gains 1 score. If the mole mole is on a different block when the player presses the button however, the hiding animation plays on the mole and the player loses 1 score. Finally, even if the player hits or misses the mole, at the end it will move to it's next location on the map.
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(bBlock)) {
         Mole.setImage(img`
@@ -310,6 +318,10 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
     Mole.setPosition(80, 95)
 })
+// Created on: 1/16/2023
+// Created By: Alex James
+// 
+// This block controls and dictates what happens at the "A" sprite. If the player presses the A button, and the mole is on that hole, they player succeeds, the mole sprite changes to the damaged one. and the player gains 1 score. If the mole mole is on a different block when the player presses the button however, the hiding animation plays on the mole and the player loses 1 score. Finally, even if the player hits or misses the mole, at the end it will move to it's next location on the map.
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(aBlock)) {
         Mole.setImage(img`
@@ -466,6 +478,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
     Mole.setPosition(57, 60)
 })
+// Created on: 1/16/2023
+// Created By: Alex James
+// 
+// This block controls and dictates what happens at the "Left"/Cyan sprite. If the player presses the left button, and the mole is on that hole, they player succeeds, the mole sprite changes to the damaged one. and the player gains 1 score. If the mole mole is on a different block when the player presses the button however, the hiding animation plays on the mole and the player loses 1 score. Finally, even if the player hits or misses the mole, at the end it will move to it's next location on the map.
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(leftBlock)) {
         Mole.setImage(img`
@@ -622,6 +638,10 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
     Mole.setPosition(136, 60)
 })
+// Created on: 1/17/2023
+// Created By: Alex James
+// 
+// This block controls and dictates what happens at the Right/Purple sprite. If the player presses the right button, and the mole is on that hole, they player succeeds, the mole sprite changes to the damaged one. and the player gains 1 score. If the mole mole is on a different block when the player presses the button however, the hiding animation plays on the mole and the player loses 1 score. Finally, even if the player hits or misses the mole, at the end it will move to it's next location on the map.
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(RightBlock)) {
         Mole.setImage(img`
@@ -778,6 +798,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
     Mole.setPosition(22, 60)
 })
+// Created on: 1/17/2023
+// Created By: Alex James
+// 
+// This block controls and dictates what happens at the Down/Orange sprite. If the player presses the down button, and the mole is on that hole, they player succeeds, the mole sprite changes to the damaged one. and the player gains 1 score. If the mole mole is on a different block when the player presses the button however, the hiding animation plays on the mole and the player loses 1 score. Finally, even if the player hits or misses the mole, at the end it will move to it's next location on the map.
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Mole.overlapsWith(downBlock)) {
         Mole.setImage(img`
@@ -934,6 +958,12 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         `, SpriteKind.Player)
     Mole.setPosition(80, 30)
 })
+// Created on: 1/16/2023
+// Created By: Alex James
+// 
+// This block of code establishes the starting points for everything in the game. First, it starts the game timer for 25 seconds, and sets the background to the stage. Next is all of the sprites. The code spawns in a sprite for each control on the keyboard, and sets their position to where they are on the map. It also creates the player/mole sprite and teleports it to it's first hole.
+// 
+// 
 let Mole: Sprite = null
 let downBlock: Sprite = null
 let upBlock: Sprite = null
